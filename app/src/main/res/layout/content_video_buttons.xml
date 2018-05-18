@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/videoToolbarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="312dp"
+        android:orientation="horizontal"
+        android:title="Video Playback">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/video_playback_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary">
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_arrow_back_white_18dp"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/publish_comments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0"
+                    android:background="@color/formationPurple"
+                    android:text="Publish Comments"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="edu.berkeley.hci.formation.VideoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="LinearLayoutManager"
+        tools:orientation="horizontal"
+        tools:listitem="@layout/fragment_video" />
+
+    <RelativeLayout
+        android:id="@+id/no_videos_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/no_videos_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#C5C6C9"
+            android:layout_marginLeft="180dp"
+            android:background="@drawable/ic_videocam_black_24dp" />
+
+        <TextView
+            android:id="@+id/no_videos_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_videos"
+            android:textAlignment="center"
+            android:layout_below="@id/no_videos_icon"
+            android:gravity="center_horizontal"/>
+    </RelativeLayout>
+
+</FrameLayout>

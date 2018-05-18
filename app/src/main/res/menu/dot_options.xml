@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tag_dancer"
+        android:title="Tag Dancer"/>
+
+    <item
+        android:id="@+id/color_dot"
+        android:title="Choose Color"/>
+
+    <item
+        android:id="@+id/remove_dancer"
+        android:title="Remove Dancer"/>
+</menu>
